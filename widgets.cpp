@@ -2,18 +2,14 @@
 #include "graphics.hpp"
 using namespace genv;
 
-Widget::Widget(int x, int y, int sx, int sy,int intervallum_tol, int intervallum_ig)
+Widget::Widget(int x, int y, int sx, int sy)
 {
     _x=x;
     _y=y;
     _size_x = sx;
     _size_y=sy;
     _focused=false;
-    _intervallum_tol = intervallum_tol;
-    _intervallum_ig = intervallum_ig;
 }
-
-
 
 bool Widget::is_selected(int mouse_x, int mouse_y) const
 {

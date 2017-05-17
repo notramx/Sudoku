@@ -6,9 +6,9 @@
 class Widget {
 protected:
     bool _focused;
-    int _x, _y, _size_x, _size_y,_intervallum_tol,_intervallum_ig;
+    int _x, _y, _size_x, _size_y;
 public:
-    Widget(int x, int y, int sx, int sy, int intervallum_tol, int intervallum_ig);
+    Widget(int x, int y, int sx, int sy);
     virtual bool is_selected(int mouse_x, int mouse_y) const;
     virtual void draw() const =0;
     virtual void handle(genv::event ev);
